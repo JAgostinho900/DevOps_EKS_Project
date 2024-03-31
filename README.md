@@ -1,10 +1,10 @@
-# DevOps_Project_Version1
+# DevOps_Project
 
 I created this project in order to familiarize myself with some of the most used technologies in DevOps. 
 
-The main characteristics are as it follows:
--Simple Hello World Node application
--Docker to containerize the application, and create an environment with all requisites the application requires to run
--Kubernetes to distribute the docker image
--Terraform to create the infrastruture as code
--AWS as cloud provider
+The main characteristics are as it follows:<br/>
+-Simple Hello World Node application<br/>
+-Docker to containerize the application, and create an environment with all requisites the application requires to run<br/>
+-Kubernetes to distribute the docker image<br/>
+-Terraform to create the infrastruture as code<br/>
+-AWS as cloud provider<br/>
