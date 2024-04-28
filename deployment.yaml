@@ -1,0 +1,21 @@
+#The deployment.yaml file is a Kubernetes manifest file used to define a Deployment resource. Deployments in Kubernetes are used to manage a set of identical pods, ensuring they are always running and have the desired configuration.
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: app-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: app
+  template:
+    metadata:
+      labels:
+        app: app
+    spec:
+      containers:
+        - name: app
+          image: jagostinho900/app:latest
+          ports:
+            - containerPort: 3000

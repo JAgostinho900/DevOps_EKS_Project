@@ -1,0 +1,16 @@
+#In Kubernetes, a Service is an abstraction that defines a logical set of Pods and a policy by which to access them. The service.yaml file defines how your application can be accessed within the Kubernetes cluster, including how traffic is routed to the pods.
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: app-service
+spec:
+  selector:
+    app: app
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 3000
+  type: LoadBalancer
+
+  #In summary, the service.yaml file defines a Service resource named app-service that exposes the pods with the label app: app on port 80. It also specifies that external traffic should be routed to port 3000 on these pods. Finally, it configures the Service to be of type LoadBalancer, allowing external access to the Service.
